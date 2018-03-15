@@ -1,0 +1,28 @@
+﻿
+.radioLabel 
+{
+	padding:1px;
+}
+.radioLabel:hover
+{
+	border:dashed 1px #808080;
+	padding:0px;
+	border-radius: 5px;
+}
+.radioLabel:active, .radioLabel:checked, .radioLabel:focus
+{
+	background:#f0f0f0;
+}
+
+.vLab label { display:block; }
+
+
+select .selected { }
+select option[selected] {  background:#ffff80; color:red; }
+
+
+
+/* onInput="this.previousElementSibling.value=this.value;" */
+ input[type=range] { color:#000; }
+ input[type=range]::before { content:attr(min); position:relative; top:-10px; }
+ input[type=range]::after { content:attr(max); position:relative; top:-10px; }
